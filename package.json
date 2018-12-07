@@ -1,0 +1,28 @@
+{
+  "name": "house-manager",
+  "version": "1.0.0",
+  "description": "House management app built with MERN stack: Node.js+express.js, mongoDB (using mongoose), and React.",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "database": "mongod",
+    "start": "concurrently --kill-others \"npm run database\" \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netanmen/house-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/netanmen/house-manager/issues"
+  },
+  "homepage": "https://github.com/netanmen/house-manager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5"
+  }
+}
